@@ -3,58 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Geriátrico - Dr. Fernando Rocha</title>
+  <title>Casa Geriátrica - Dr. Fernando Rocha</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-900 text-white p-6 shadow-md">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-      <h1 class="text-2xl font-bold">Casa Geriátrica - Dr. Fernando Rocha</h1>
-      <nav class="mt-4 md:mt-0 space-x-4">
-        <a href="#protocolos" class="hover:underline">Protocolos</a>
-        <a href="#testes" class="hover:underline">Testes</a>
-        <a href="#contato" class="hover:underline">Contato</a>
-      </nav>
+<body class="bg-white text-gray-800">
+
+  <!-- Hero com imagem -->
+  <header class="relative bg-white">
+    <img src="https://images.pexels.com/photos/5790798/pexels-photo-5790798.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Idosos sorrindo" class="w-full h-96 object-cover opacity-90">
+    <div class="absolute inset-0 bg-white bg-opacity-70 flex items-center justify-center">
+      <div class="text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">Cuidado com excelência ao idoso</h1>
+        <p class="text-lg md:text-xl text-gray-700">Protocolos clínicos, testes e informações para o envelhecimento saudável</p>
+      </div>
     </div>
   </header>
 
-  <section class="bg-white py-12">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-extrabold mb-4">Cuidado especializado para o envelhecimento saudável</h2>
-      <p class="text-lg">Protocolos clínicos, testes cognitivos e ferramentas para apoiar o cuidado do paciente idoso.</p>
-    </div>
-  </section>
+  <!-- Seções -->
+  <main class="py-16 px-6 max-w-6xl mx-auto space-y-16">
+    <!-- Protocolos -->
+    <section>
+      <h2 class="text-3xl font-bold text-blue-800 mb-8">📋 Protocolos Clínicos</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-blue-50 rounded-lg shadow p-6">
+          <h3 class="font-semibold text-lg mb-2">Hipertensão no Idoso</h3>
+          <p class="text-sm text-gray-700">Condutas atualizadas para o manejo de PA elevada na geriatria.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg shadow p-6">
+          <h3 class="font-semibold text-lg mb-2">Síndrome Respiratória</h3>
+          <p class="text-sm text-gray-700">Identificação precoce e cuidados em síndromes gripais e dispneia.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg shadow p-6">
+          <h3 class="font-semibold text-lg mb-2">Cuidados Paliativos</h3>
+          <p class="text-sm text-gray-700">Abordagem humanizada para pacientes em final de vida.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="protocolos" class="bg-gray-50 py-12">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-bold mb-6 text-blue-900">📋 Protocolos Clínicos</h3>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <li class="bg-white p-6 shadow rounded-lg">✔️ Hipertensão e hipotensão</li>
-        <li class="bg-white p-6 shadow rounded-lg">✔️ Síndrome respiratória aguda</li>
-        <li class="bg-white p-6 shadow rounded-lg">✔️ Cuidados paliativos</li>
-        <li class="bg-white p-6 shadow rounded-lg">✔️ Manejo da dor crônica</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Testes Cognitivos -->
+    <section>
+      <h2 class="text-3xl font-bold text-blue-800 mb-8">🧠 Testes Cognitivos</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border rounded-lg p-6 shadow">
+          <h3 class="text-lg font-semibold mb-2">Mini Exame do Estado Mental (MEEM)</h3>
+          <p class="text-sm text-gray-700">Ferramenta de rastreio de declínio cognitivo com base em memória, atenção e linguagem.</p>
+        </div>
+        <div class="bg-white border rounded-lg p-6 shadow">
+          <h3 class="text-lg font-semibold mb-2">Teste do Relógio</h3>
+          <p class="text-sm text-gray-700">Avaliação funcional da cognição visuoespacial e funções executivas.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="testes" class="bg-white py-12">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-bold mb-6 text-blue-900">🧠 Testes para o Idoso</h3>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <li class="bg-gray-50 p-6 shadow rounded-lg">🧪 Mini Exame do Estado Mental (MEEM)</li>
-        <li class="bg-gray-50 p-6 shadow rounded-lg">🧪 Bateria Breve de Rastreo Cognitivo</li>
-        <li class="bg-gray-50 p-6 shadow rounded-lg">🧪 Teste do Relógio</li>
-        <li class="bg-gray-50 p-6 shadow rounded-lg">🧪 Timed Up and Go</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Contato -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold text-blue-800 mb-4">📞 Entre em contato</h2>
+      <p class="text-gray-700 text-lg">Email: <a href="mailto:contato@drfernandorocha.com" class="text-blue-600 underline">contato@drfernandorocha.com</a></p>
+    </section>
+  </main>
 
-  <section id="contato" class="bg-blue-900 text-white py-12">
-    <div class="container mx-auto text-center">
-      <h3 class="text-xl font-bold mb-4">Entr
+  <!-- Rodapé -->
+  <footer class="bg-blue-900 text-white py-4 text-center">
+    © 2025 Dr. Fernando Rocha - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
